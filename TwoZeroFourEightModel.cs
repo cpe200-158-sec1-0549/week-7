@@ -94,8 +94,7 @@ namespace twozerofoureight
                     if (j > 0 && buffer[j] != 0 && buffer[j] == buffer[j - 1])
                     {
 
-                        score += buffer[j];
-                        score -= buffer[j - 1];
+
 
                         buffer[j - 1] *= 2;
                         buffer[j] = 0;
@@ -153,8 +152,6 @@ namespace twozerofoureight
                     if (j > 0 && buffer[j] != 0 && buffer[j] == buffer[j - 1])
                     {
 
-                        score += buffer[j];
-                        score -= buffer[j - 1];
 
                         buffer[j - 1] *= 2;
                         buffer[j] = 0;
@@ -213,8 +210,7 @@ namespace twozerofoureight
                     if (j > 0 && buffer[j] != 0 && buffer[j] == buffer[j - 1])
                     {
 
-                        score += buffer[j];
-                        score -= buffer[j - 1];
+
 
                         buffer[j - 1] *= 2;
                         buffer[j] = 0;
@@ -269,8 +265,7 @@ namespace twozerofoureight
                 {
                     if (j > 0 && buffer[j] != 0 && buffer[j] == buffer[j - 1])
                     {
-                        score += buffer[j];
-                        score -= buffer[j-1];
+
 
                         buffer[j - 1] *= 2;
                         buffer[j] = 0;

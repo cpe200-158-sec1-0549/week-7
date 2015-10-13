@@ -14,16 +14,26 @@ namespace twozerofoureight
     {
         Model model;
         Controller controller;
+        ScoreView s_view;
        
         public TwoZeroFourEightView()
         {
             InitializeComponent();
             model = new TwoZeroFourEightModel();
             model.AttachObserver(this);
+
+            s_view = new ScoreView();
+            s_view.Visible = true;
+            s_view.Enabled = true;
+
             controller = new TwoZeroFourEightController();
             controller.AddModel(model);
             controller.ActionPerformed(TwoZeroFourEightController.LEFT);
+            
         }
+
+
+
 
         public void Notify(Model m)
         {
@@ -81,6 +91,7 @@ namespace twozerofoureight
         private void UpdateScore(int updatescore)
         {
             lblScore.Text = "" + updatescore;
+            s_view.updatescore(updatescore);
         }
 
         private void btnLeft_Click(object sender, EventArgs e)
@@ -114,6 +125,11 @@ namespace twozerofoureight
         }
 
         private void lblScore_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void TwoZeroFourEightView_KeyPress(object sender, KeyPressEventArgs e)
         {
 
         }

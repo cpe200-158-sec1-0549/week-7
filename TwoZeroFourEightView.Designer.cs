@@ -318,6 +318,7 @@
             this.Name = "TwoZeroFourEightView";
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.TwoZeroFourEightView_Load);
+            this.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.TwoZeroFourEightView_KeyPress);
             this.ResumeLayout(false);
             this.PerformLayout();
 
